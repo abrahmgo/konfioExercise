@@ -49,8 +49,8 @@ class dogsTableViewController: UITableViewController {
         {
             apiKonfio.shared.cleanDogs(data: data){ (arrDogs) in
                 DispatchQueue.main.async {
-                    self.saveData()
                     self.arrDogs = arrDogs
+                    self.saveData()
                     self.downloadImages()
                     self.tableView.reloadData()
                 }
