@@ -43,13 +43,13 @@ public class apiKonfio{
                         completion(httpResponse.statusCode,info)
                     }
                     catch {
-                        completion(httpResponse.statusCode,["message":"formato de respuesta incorrecto"])
+                        completion(httpResponse.statusCode,["message":"Incorrect data format. 😿"])
                     }
                 } else {
-                    completion(httpResponse.statusCode,["message":"información no disponible"])
+                    completion(httpResponse.statusCode,["message":"Data is unavailable"])
                 }
             }else {
-                completion(500,["message":"url no disponible"])
+                completion(500,["message":"Server misses. 😿"])
             }
         }
         task.resume()

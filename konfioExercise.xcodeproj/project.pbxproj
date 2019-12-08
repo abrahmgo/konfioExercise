@@ -19,6 +19,13 @@
 		17758B70239CB04D00529F1F /* extensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B6F239CB04D00529F1F /* extensionViewController.swift */; };
 		17758B73239CB16600529F1F /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B72239CB16600529F1F /* mainViewController.swift */; };
 		17758B76239CB31500529F1F /* extensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B75239CB31500529F1F /* extensionUIColor.swift */; };
+		17758B7B239CB57E00529F1F /* Dogs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B79239CB57E00529F1F /* Dogs+CoreDataClass.swift */; };
+		17758B7C239CB57E00529F1F /* Dogs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B7A239CB57E00529F1F /* Dogs+CoreDataProperties.swift */; };
+		17758B7E239CB5AA00529F1F /* coreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B7D239CB5AA00529F1F /* coreDataManager.swift */; };
+		17758B81239CBE0F00529F1F /* labelTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B80239CBE0F00529F1F /* labelTitle.swift */; };
+		17758B83239CBE1A00529F1F /* labelSubTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B82239CBE1A00529F1F /* labelSubTitle.swift */; };
+		17758B85239CBE2700529F1F /* labelDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B84239CBE2700529F1F /* labelDescription.swift */; };
+		17758B87239CBF5F00529F1F /* buttonPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B86239CBF5F00529F1F /* buttonPrincipal.swift */; };
 		17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */; };
 		17F40A82239C8C7100FDF305 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A81239C8C7100FDF305 /* dog.swift */; };
 		17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A84239C8CCD00FDF305 /* apiKonfio.swift */; };
@@ -64,6 +71,13 @@
 		17758B6F239CB04D00529F1F /* extensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionViewController.swift; sourceTree = "<group>"; };
 		17758B72239CB16600529F1F /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		17758B75239CB31500529F1F /* extensionUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIColor.swift; sourceTree = "<group>"; };
+		17758B79239CB57E00529F1F /* Dogs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dogs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		17758B7A239CB57E00529F1F /* Dogs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dogs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		17758B7D239CB5AA00529F1F /* coreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataManager.swift; sourceTree = "<group>"; };
+		17758B80239CBE0F00529F1F /* labelTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelTitle.swift; sourceTree = "<group>"; };
+		17758B82239CBE1A00529F1F /* labelSubTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelSubTitle.swift; sourceTree = "<group>"; };
+		17758B84239CBE2700529F1F /* labelDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelDescription.swift; sourceTree = "<group>"; };
+		17758B86239CBF5F00529F1F /* buttonPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonPrincipal.swift; sourceTree = "<group>"; };
 		17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17F40A81239C8C7100FDF305 /* dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
 		17F40A84239C8CCD00FDF305 /* apiKonfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKonfio.swift; sourceTree = "<group>"; };
@@ -121,6 +135,7 @@
 		171B314A239C89390031A435 /* konfioExercise */ = {
 			isa = PBXGroup;
 			children = (
+				17758B7F239CBDE300529F1F /* styles */,
 				17F40A8E239CA81200FDF305 /* extension */,
 				17F40A88239C9D9800FDF305 /* view */,
 				17F40A83239C8CAB00FDF305 /* api */,
@@ -159,6 +174,34 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		17758B77239CB56100529F1F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				17758B79239CB57E00529F1F /* Dogs+CoreDataClass.swift */,
+				17758B7A239CB57E00529F1F /* Dogs+CoreDataProperties.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		17758B78239CB56800529F1F /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				17758B7D239CB5AA00529F1F /* coreDataManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		17758B7F239CBDE300529F1F /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				17758B80239CBE0F00529F1F /* labelTitle.swift */,
+				17758B82239CBE1A00529F1F /* labelSubTitle.swift */,
+				17758B84239CBE2700529F1F /* labelDescription.swift */,
+				17758B86239CBF5F00529F1F /* buttonPrincipal.swift */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
 		17A83058239C8AD700AC6287 /* supportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +216,8 @@
 		17F40A7B239C8B2000FDF305 /* storage */ = {
 			isa = PBXGroup;
 			children = (
+				17758B78239CB56800529F1F /* manager */,
+				17758B77239CB56100529F1F /* model */,
 				171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */,
 			);
 			path = storage;
@@ -368,15 +413,22 @@
 			files = (
 				17F40A82239C8C7100FDF305 /* dog.swift in Sources */,
 				17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */,
+				17758B87239CBF5F00529F1F /* buttonPrincipal.swift in Sources */,
 				17758B73239CB16600529F1F /* mainViewController.swift in Sources */,
+				17758B85239CBE2700529F1F /* labelDescription.swift in Sources */,
 				17F40A8A239C9DC500FDF305 /* dogsTableViewController.swift in Sources */,
 				17758B6E239CAC6600529F1F /* extensionUIImage.swift in Sources */,
 				171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */,
+				17758B83239CBE1A00529F1F /* labelSubTitle.swift in Sources */,
+				17758B7E239CB5AA00529F1F /* coreDataManager.swift in Sources */,
 				17F40A8D239CA44D00FDF305 /* dogCellTableViewCell.swift in Sources */,
 				17758B76239CB31500529F1F /* extensionUIColor.swift in Sources */,
 				171B314C239C89390031A435 /* AppDelegate.swift in Sources */,
+				17758B7B239CB57E00529F1F /* Dogs+CoreDataClass.swift in Sources */,
 				171B314E239C89390031A435 /* SceneDelegate.swift in Sources */,
 				17758B70239CB04D00529F1F /* extensionViewController.swift in Sources */,
+				17758B81239CBE0F00529F1F /* labelTitle.swift in Sources */,
+				17758B7C239CB57E00529F1F /* Dogs+CoreDataProperties.swift in Sources */,
 				17F40A90239CA81F00FDF305 /* extensionDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

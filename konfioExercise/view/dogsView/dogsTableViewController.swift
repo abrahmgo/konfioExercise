@@ -15,8 +15,10 @@ class dogsTableViewController: UITableViewController {
         initView()
     }
     
+    private let context = coreDataManager.shared.persistentContainer.viewContext
     private var arrDogs = [dog]()
     private var arrImages = [String:UIImage]()
+    var localArrDogs = [Dogs]()
     var dispatchGroup = DispatchGroup()
     var useFlag = 0
     
@@ -24,10 +26,15 @@ class dogsTableViewController: UITableViewController {
     {
         self.navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = useFlag == 0 ? "Dogs We Love" : "Dogs I Love"
+        checkLocalData()
+    }
+    
+    func getData()
+    {
         apiKonfio.shared.downloadData{ (status, info) in
             if status != 200
             {
-                self.showAlertMessage(titleStr: "Dogs", messageStr: "The dogs are unavailable \(status). 😿 ")
+                self.showAlertMessage(titleStr: "Dogs", messageStr: (info["message"] as! String) + " \(status). 😿 ")
             }
             else
             {
@@ -42,6 +49,7 @@ class dogsTableViewController: UITableViewController {
         {
             apiKonfio.shared.cleanDogs(data: data){ (arrDogs) in
                 DispatchQueue.main.async {
+                    self.saveData()
                     self.arrDogs = arrDogs
                     self.downloadImages()
                     self.tableView.reloadData()
@@ -50,7 +58,27 @@ class dogsTableViewController: UITableViewController {
         }
         else
         {
-            self.showAlertMessage(titleStr: "Dogs", messageStr: "Incorrect data format. 😿")
+            self.showAlertMessageCompletion(titleStr: "Dogs", messageStr: "Incorrect data format. 😿") { (_) in
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+    }
+    
+    func saveData()
+    {
+        for puppy in arrDogs
+        {
+            let dogSave = Dogs(entity: Dogs.entity(), insertInto: self.context)
+            dogSave.dogAge = Int16(puppy.age)
+            dogSave.dogDescription = puppy.description
+            dogSave.dogName = puppy.dogName
+            dogSave.dogUrl = puppy.url
+            if !coreDataManager.shared.saveContext()
+            {
+                DispatchQueue.main.async {
+                    self.showAlertMessage(titleStr: "Dogs", messageStr: "We couldn't save the puppies 🐕")
+                }
+            }
         }
     }
     
@@ -75,6 +103,36 @@ class dogsTableViewController: UITableViewController {
             }
             dispatchGroup.notify(queue: .main) {
                 self.tableView.reloadData()
+            }
+        }
+    }
+    
+    func checkLocalData()
+    {
+        do{
+            localArrDogs = try context.fetch(Dogs.fetchRequest())
+            if localArrDogs.count != 0
+            {
+                for data in localArrDogs
+                {
+                    let localDog = dog(dogName: data.dogName!, description: data.dogDescription!, age: Int(data.dogAge), url: data.dogUrl!)
+                    arrDogs.append(localDog)
+                }
+                DispatchQueue.main.async {
+                    self.downloadImages()
+                    self.tableView.reloadData()
+                }
+            }
+            else
+            {
+                self.getData()
+            }
+        }catch let error as NSError{
+            print("error \(error) \(error.userInfo)")
+            DispatchQueue.main.async {
+                self.showAlertMessageCompletion(titleStr: "Dogs", messageStr: "Somethin is wrong \(error) \(error.userInfo) 🤬", completion: { (_) in
+                    self.navigationController?.popToRootViewController(animated: true)
+                })
             }
         }
     }
