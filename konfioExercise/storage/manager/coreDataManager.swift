@@ -103,7 +103,7 @@ class coreDataManager {
             let result = try context.fetch(fetchRequest) as! [NSManagedObject]
             let object = result[0]
             object.setValue(date, forKey: "dateNotification")
-            coreDataManager.shared.saveContext()
+            _ = coreDataManager.shared.saveContext()
             return true
             
         } catch let error {

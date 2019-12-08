@@ -6,7 +6,11 @@
         <attribute name="dogName" optional="YES" attributeType="String"/>
         <attribute name="dogUrl" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="FavoriteDogs" representedClassName="FavoriteDogs" syncable="YES" codeGenerationType="class">
+        <attribute name="dogUrl" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Dogs" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="FavoriteDogs" positionX="-54" positionY="18" width="128" height="58"/>
     </elements>
 </model>

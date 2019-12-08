@@ -24,39 +24,64 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-L9-MF0">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-L9-MF0">
                                             <rect key="frame" x="21" y="33" width="117" height="177"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="117" id="B7z-FO-o6w"/>
+                                            </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-ac-iIu">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-ac-iIu">
                                             <rect key="frame" x="138" y="63" width="216" height="147"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYw-VE-Tnv" customClass="labelTitle" customModule="konfioExercise" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYw-VE-Tnv" customClass="labelTitle" customModule="konfioExercise" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="14" width="189" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="ogW-IQ-wlq"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK5-aO-cNc" customClass="labelSubtitle" customModule="konfioExercise" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK5-aO-cNc" customClass="labelSubtitle" customModule="konfioExercise" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="99" width="189" height="15"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="gxw-51-qJc"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-aj-uHo" customClass="labelDescription" customModule="konfioExercise" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-aj-uHo" customClass="labelDescription" customModule="konfioExercise" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="45" width="189" height="48"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="MK5-aO-cNc" firstAttribute="top" secondItem="Jbh-aj-uHo" secondAttribute="bottom" constant="6" id="108-Xw-XXp"/>
+                                                <constraint firstItem="iYw-VE-Tnv" firstAttribute="leading" secondItem="eFV-ac-iIu" secondAttribute="leadingMargin" id="Iav-yv-dAa"/>
+                                                <constraint firstItem="iYw-VE-Tnv" firstAttribute="top" secondItem="eFV-ac-iIu" secondAttribute="top" constant="14" id="NpU-Pg-FAC"/>
+                                                <constraint firstAttribute="trailing" secondItem="iYw-VE-Tnv" secondAttribute="trailing" constant="19" id="Upu-oD-n4U"/>
+                                                <constraint firstAttribute="bottom" secondItem="MK5-aO-cNc" secondAttribute="bottom" constant="33" id="a6i-4i-PSW"/>
+                                                <constraint firstItem="iYw-VE-Tnv" firstAttribute="trailing" secondItem="Jbh-aj-uHo" secondAttribute="trailing" id="n6i-zQ-aAq"/>
+                                                <constraint firstItem="iYw-VE-Tnv" firstAttribute="leading" secondItem="Jbh-aj-uHo" secondAttribute="leading" id="nfS-LC-ryR"/>
+                                                <constraint firstItem="Jbh-aj-uHo" firstAttribute="leading" secondItem="MK5-aO-cNc" secondAttribute="leading" id="ovy-5c-dY5"/>
+                                                <constraint firstItem="Jbh-aj-uHo" firstAttribute="top" secondItem="iYw-VE-Tnv" secondAttribute="bottom" constant="7" id="phW-Sm-30u"/>
+                                                <constraint firstItem="Jbh-aj-uHo" firstAttribute="trailing" secondItem="MK5-aO-cNc" secondAttribute="trailing" id="sxz-VH-MfC"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Gd5-L9-MF0" firstAttribute="leading" secondItem="kkK-EX-aYS" secondAttribute="leadingMargin" constant="5" id="20m-jY-HXs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Gd5-L9-MF0" secondAttribute="bottom" constant="-11" id="3eL-vS-7hw"/>
+                                        <constraint firstItem="eFV-ac-iIu" firstAttribute="top" secondItem="kkK-EX-aYS" secondAttribute="topMargin" constant="52" id="JZz-et-BPu"/>
+                                        <constraint firstItem="Gd5-L9-MF0" firstAttribute="top" secondItem="kkK-EX-aYS" secondAttribute="topMargin" constant="22" id="LLT-8X-EIt"/>
+                                        <constraint firstItem="Gd5-L9-MF0" firstAttribute="bottom" secondItem="eFV-ac-iIu" secondAttribute="bottom" id="OLC-z2-Ppl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="eFV-ac-iIu" secondAttribute="trailing" constant="5" id="jzR-26-pMY"/>
+                                        <constraint firstItem="eFV-ac-iIu" firstAttribute="leading" secondItem="Gd5-L9-MF0" secondAttribute="trailing" id="t7Y-oA-4Dk"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -87,9 +112,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtU-pb-l5K" customClass="buttonPrincipal" customModule="konfioExercise" customModuleProvider="target">
-                                <rect key="frame" x="46" y="381" width="282" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtU-pb-l5K" customClass="buttonPrincipal" customModule="konfioExercise" customModuleProvider="target">
+                                <rect key="frame" x="46" y="381" width="283" height="50"/>
                                 <state key="normal" title="Dogs We Love"/>
                                 <connections>
                                     <action selector="dogsWeLove:" destination="s6f-3x-dr1" eventType="touchUpInside" id="dhQ-UJ-orN"/>
@@ -97,6 +121,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CtU-pb-l5K" firstAttribute="centerY" secondItem="VPq-mf-sRA" secondAttribute="centerY" id="3dj-zD-tup"/>
+                            <constraint firstItem="CtU-pb-l5K" firstAttribute="centerX" secondItem="vQ2-PG-sWP" secondAttribute="centerX" id="6Ji-f5-ql1"/>
+                            <constraint firstItem="CtU-pb-l5K" firstAttribute="top" secondItem="vQ2-PG-sWP" secondAttribute="top" constant="293" id="F8s-BQ-i7K"/>
+                            <constraint firstItem="CtU-pb-l5K" firstAttribute="leading" secondItem="vQ2-PG-sWP" secondAttribute="leading" constant="46" id="wii-4A-2oS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vQ2-PG-sWP"/>
                     </view>
                     <navigationItem key="navigationItem" id="oDL-Nc-PNO"/>

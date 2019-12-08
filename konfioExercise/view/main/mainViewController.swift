@@ -12,10 +12,13 @@ class mainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isTranslucent = true
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isTranslucent = true
+    }
     
     @IBAction func dogsWeLove(_ sender: Any) {
         let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "dogsTableView") as! dogsTableViewController
