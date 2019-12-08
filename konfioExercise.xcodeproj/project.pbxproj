@@ -17,6 +17,8 @@
 		171B3166239C893A0031A435 /* konfioExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3165239C893A0031A435 /* konfioExerciseTests.swift */; };
 		171B3171239C893A0031A435 /* konfioExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3170239C893A0031A435 /* konfioExerciseUITests.swift */; };
 		17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */; };
+		17F40A82239C8C7100FDF305 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A81239C8C7100FDF305 /* dog.swift */; };
+		17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A84239C8CCD00FDF305 /* apiKonfio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		171B3170239C893A0031A435 /* konfioExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konfioExerciseUITests.swift; sourceTree = "<group>"; };
 		171B3172239C893A0031A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		17F40A81239C8C7100FDF305 /* dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
+		17F40A84239C8CCD00FDF305 /* apiKonfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKonfio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		171B314A239C89390031A435 /* konfioExercise */ = {
 			isa = PBXGroup;
 			children = (
+				17F40A83239C8CAB00FDF305 /* api */,
 				17F40A7F239C8BAD00FDF305 /* assets */,
 				17F40A7C239C8B3100FDF305 /* model */,
 				17F40A7B239C8B2000FDF305 /* storage */,
@@ -154,6 +159,7 @@
 		17F40A7C239C8B3100FDF305 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				17F40A81239C8C7100FDF305 /* dog.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		17F40A83239C8CAB00FDF305 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				17F40A84239C8CCD00FDF305 /* apiKonfio.swift */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				171B3150239C89390031A435 /* ViewController.swift in Sources */,
+				17F40A82239C8C7100FDF305 /* dog.swift in Sources */,
+				17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */,
 				171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */,
 				171B314C239C89390031A435 /* AppDelegate.swift in Sources */,
 				171B314E239C89390031A435 /* SceneDelegate.swift in Sources */,

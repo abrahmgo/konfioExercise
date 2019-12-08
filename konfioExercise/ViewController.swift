@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        apiKonfio.shared.downloadData { (status, info) in
+            print(status)
+            print(info)
+        }
         // Do any additional setup after loading the view.
     }
 
