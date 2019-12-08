@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171B314C239C89390031A435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B314B239C89390031A435 /* AppDelegate.swift */; };
+		171B314E239C89390031A435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B314D239C89390031A435 /* SceneDelegate.swift */; };
+		171B3150239C89390031A435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B314F239C89390031A435 /* ViewController.swift */; };
+		171B3153239C89390031A435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B3151239C89390031A435 /* Main.storyboard */; };
+		171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */; };
+		171B3158239C893A0031A435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171B3157239C893A0031A435 /* Assets.xcassets */; };
+		171B315B239C893A0031A435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B3159239C893A0031A435 /* LaunchScreen.storyboard */; };
+		171B3166239C893A0031A435 /* konfioExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3165239C893A0031A435 /* konfioExerciseTests.swift */; };
+		171B3171239C893A0031A435 /* konfioExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3170239C893A0031A435 /* konfioExerciseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		171B3162239C893A0031A435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171B3140239C89390031A435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171B3147239C89390031A435;
+			remoteInfo = konfioExercise;
+		};
+		171B316D239C893A0031A435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171B3140239C89390031A435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171B3147239C89390031A435;
+			remoteInfo = konfioExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		171B3148239C89390031A435 /* konfioExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = konfioExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		171B314B239C89390031A435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		171B314D239C89390031A435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		171B314F239C89390031A435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		171B3152239C89390031A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		171B3155239C89390031A435 /* konfioExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = konfioExercise.xcdatamodel; sourceTree = "<group>"; };
+		171B3157239C893A0031A435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171B315A239C893A0031A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		171B315C239C893A0031A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171B3161239C893A0031A435 /* konfioExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konfioExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		171B3165239C893A0031A435 /* konfioExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konfioExerciseTests.swift; sourceTree = "<group>"; };
+		171B3167239C893A0031A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171B316C239C893A0031A435 /* konfioExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konfioExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		171B3170239C893A0031A435 /* konfioExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konfioExerciseUITests.swift; sourceTree = "<group>"; };
+		171B3172239C893A0031A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171B3145239C89390031A435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171B315E239C893A0031A435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171B3169239C893A0031A435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171B313F239C89390031A435 = {
+			isa = PBXGroup;
+			children = (
+				171B314A239C89390031A435 /* konfioExercise */,
+				171B3164239C893A0031A435 /* konfioExerciseTests */,
+				171B316F239C893A0031A435 /* konfioExerciseUITests */,
+				171B3149239C89390031A435 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		171B3149239C89390031A435 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171B3148239C89390031A435 /* konfioExercise.app */,
+				171B3161239C893A0031A435 /* konfioExerciseTests.xctest */,
+				171B316C239C893A0031A435 /* konfioExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171B314A239C89390031A435 /* konfioExercise */ = {
+			isa = PBXGroup;
+			children = (
+				171B314B239C89390031A435 /* AppDelegate.swift */,
+				171B314D239C89390031A435 /* SceneDelegate.swift */,
+				171B314F239C89390031A435 /* ViewController.swift */,
+				171B3151239C89390031A435 /* Main.storyboard */,
+				171B3157239C893A0031A435 /* Assets.xcassets */,
+				171B3159239C893A0031A435 /* LaunchScreen.storyboard */,
+				171B315C239C893A0031A435 /* Info.plist */,
+				171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */,
+			);
+			path = konfioExercise;
+			sourceTree = "<group>";
+		};
+		171B3164239C893A0031A435 /* konfioExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				171B3165239C893A0031A435 /* konfioExerciseTests.swift */,
+				171B3167239C893A0031A435 /* Info.plist */,
+			);
+			path = konfioExerciseTests;
+			sourceTree = "<group>";
+		};
+		171B316F239C893A0031A435 /* konfioExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				171B3170239C893A0031A435 /* konfioExerciseUITests.swift */,
+				171B3172239C893A0031A435 /* Info.plist */,
+			);
+			path = konfioExerciseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		171B3147239C89390031A435 /* konfioExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171B3175239C893A0031A435 /* Build configuration list for PBXNativeTarget "konfioExercise" */;
+			buildPhases = (
+				171B3144239C89390031A435 /* Sources */,
+				171B3145239C89390031A435 /* Frameworks */,
+				171B3146239C89390031A435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = konfioExercise;
+			productName = konfioExercise;
+			productReference = 171B3148239C89390031A435 /* konfioExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		171B3160239C893A0031A435 /* konfioExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171B3178239C893A0031A435 /* Build configuration list for PBXNativeTarget "konfioExerciseTests" */;
+			buildPhases = (
+				171B315D239C893A0031A435 /* Sources */,
+				171B315E239C893A0031A435 /* Frameworks */,
+				171B315F239C893A0031A435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171B3163239C893A0031A435 /* PBXTargetDependency */,
+			);
+			name = konfioExerciseTests;
+			productName = konfioExerciseTests;
+			productReference = 171B3161239C893A0031A435 /* konfioExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		171B316B239C893A0031A435 /* konfioExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171B317B239C893A0031A435 /* Build configuration list for PBXNativeTarget "konfioExerciseUITests" */;
+			buildPhases = (
+				171B3168239C893A0031A435 /* Sources */,
+				171B3169239C893A0031A435 /* Frameworks */,
+				171B316A239C893A0031A435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171B316E239C893A0031A435 /* PBXTargetDependency */,
+			);
+			name = konfioExerciseUITests;
+			productName = konfioExerciseUITests;
+			productReference = 171B316C239C893A0031A435 /* konfioExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		171B3140239C89390031A435 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Andrés Abraham Bonilla Gómez";
+				TargetAttributes = {
+					171B3147239C89390031A435 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					171B3160239C893A0031A435 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 171B3147239C89390031A435;
+					};
+					171B316B239C893A0031A435 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 171B3147239C89390031A435;
+					};
+				};
+			};
+			buildConfigurationList = 171B3143239C89390031A435 /* Build configuration list for PBXProject "konfioExercise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 171B313F239C89390031A435;
+			productRefGroup = 171B3149239C89390031A435 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171B3147239C89390031A435 /* konfioExercise */,
+				171B3160239C893A0031A435 /* konfioExerciseTests */,
+				171B316B239C893A0031A435 /* konfioExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		171B3146239C89390031A435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171B315B239C893A0031A435 /* LaunchScreen.storyboard in Resources */,
+				171B3158239C893A0031A435 /* Assets.xcassets in Resources */,
+				171B3153239C89390031A435 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171B315F239C893A0031A435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171B316A239C893A0031A435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171B3144239C89390031A435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171B3150239C89390031A435 /* ViewController.swift in Sources */,
+				171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */,
+				171B314C239C89390031A435 /* AppDelegate.swift in Sources */,
+				171B314E239C89390031A435 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171B315D239C893A0031A435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171B3166239C893A0031A435 /* konfioExerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171B3168239C893A0031A435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171B3171239C893A0031A435 /* konfioExerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		171B3163239C893A0031A435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171B3147239C89390031A435 /* konfioExercise */;
+			targetProxy = 171B3162239C893A0031A435 /* PBXContainerItemProxy */;
+		};
+		171B316E239C893A0031A435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171B3147239C89390031A435 /* konfioExercise */;
+			targetProxy = 171B316D239C893A0031A435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		171B3151239C89390031A435 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171B3152239C89390031A435 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		171B3159239C893A0031A435 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171B315A239C893A0031A435 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		171B3173239C893A0031A435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		171B3174239C893A0031A435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		171B3176239C893A0031A435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJAAB85D5P;
+				INFOPLIST_FILE = konfioExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konfioExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		171B3177239C893A0031A435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJAAB85D5P;
+				INFOPLIST_FILE = konfioExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konfioExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		171B3179239C893A0031A435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJAAB85D5P;
+				INFOPLIST_FILE = konfioExerciseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konfioExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/konfioExercise.app/konfioExercise";
+			};
+			name = Debug;
+		};
+		171B317A239C893A0031A435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJAAB85D5P;
+				INFOPLIST_FILE = konfioExerciseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konfioExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/konfioExercise.app/konfioExercise";
+			};
+			name = Release;
+		};
+		171B317C239C893A0031A435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJAAB85D5P;
+				INFOPLIST_FILE = konfioExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konfioExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = konfioExercise;
+			};
+			name = Debug;
+		};
+		171B317D239C893A0031A435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJAAB85D5P;
+				INFOPLIST_FILE = konfioExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konfioExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = konfioExercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		171B3143239C89390031A435 /* Build configuration list for PBXProject "konfioExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171B3173239C893A0031A435 /* Debug */,
+				171B3174239C893A0031A435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171B3175239C893A0031A435 /* Build configuration list for PBXNativeTarget "konfioExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171B3176239C893A0031A435 /* Debug */,
+				171B3177239C893A0031A435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171B3178239C893A0031A435 /* Build configuration list for PBXNativeTarget "konfioExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171B3179239C893A0031A435 /* Debug */,
+				171B317A239C893A0031A435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171B317B239C893A0031A435 /* Build configuration list for PBXNativeTarget "konfioExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171B317C239C893A0031A435 /* Debug */,
+				171B317D239C893A0031A435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				171B3155239C89390031A435 /* konfioExercise.xcdatamodel */,
+			);
+			currentVersion = 171B3155239C89390031A435 /* konfioExercise.xcdatamodel */;
+			path = konfioExercise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 171B3140239C89390031A435 /* Project object */;
+}
