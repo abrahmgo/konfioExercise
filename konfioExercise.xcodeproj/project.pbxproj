@@ -15,6 +15,10 @@
 		171B315B239C893A0031A435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B3159239C893A0031A435 /* LaunchScreen.storyboard */; };
 		171B3166239C893A0031A435 /* konfioExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3165239C893A0031A435 /* konfioExerciseTests.swift */; };
 		171B3171239C893A0031A435 /* konfioExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3170239C893A0031A435 /* konfioExerciseUITests.swift */; };
+		17758B6E239CAC6600529F1F /* extensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B6D239CAC6600529F1F /* extensionUIImage.swift */; };
+		17758B70239CB04D00529F1F /* extensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B6F239CB04D00529F1F /* extensionViewController.swift */; };
+		17758B73239CB16600529F1F /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B72239CB16600529F1F /* mainViewController.swift */; };
+		17758B76239CB31500529F1F /* extensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B75239CB31500529F1F /* extensionUIColor.swift */; };
 		17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */; };
 		17F40A82239C8C7100FDF305 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A81239C8C7100FDF305 /* dog.swift */; };
 		17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A84239C8CCD00FDF305 /* apiKonfio.swift */; };
@@ -56,6 +60,10 @@
 		171B316C239C893A0031A435 /* konfioExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konfioExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		171B3170239C893A0031A435 /* konfioExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konfioExerciseUITests.swift; sourceTree = "<group>"; };
 		171B3172239C893A0031A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17758B6D239CAC6600529F1F /* extensionUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIImage.swift; sourceTree = "<group>"; };
+		17758B6F239CB04D00529F1F /* extensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionViewController.swift; sourceTree = "<group>"; };
+		17758B72239CB16600529F1F /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		17758B75239CB31500529F1F /* extensionUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIColor.swift; sourceTree = "<group>"; };
 		17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17F40A81239C8C7100FDF305 /* dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
 		17F40A84239C8CCD00FDF305 /* apiKonfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKonfio.swift; sourceTree = "<group>"; };
@@ -143,6 +151,14 @@
 			path = konfioExerciseUITests;
 			sourceTree = "<group>";
 		};
+		17758B71239CB15900529F1F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				17758B72239CB16600529F1F /* mainViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
 		17A83058239C8AD700AC6287 /* supportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +206,7 @@
 		17F40A88239C9D9800FDF305 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				17758B71239CB15900529F1F /* main */,
 				17F40A8B239CA43600FDF305 /* dogsView */,
 				171B3151239C89390031A435 /* Main.storyboard */,
 			);
@@ -209,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				17F40A8F239CA81F00FDF305 /* extensionDictionary.swift */,
+				17758B6D239CAC6600529F1F /* extensionUIImage.swift */,
+				17758B6F239CB04D00529F1F /* extensionViewController.swift */,
+				17758B75239CB31500529F1F /* extensionUIColor.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -348,11 +368,15 @@
 			files = (
 				17F40A82239C8C7100FDF305 /* dog.swift in Sources */,
 				17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */,
+				17758B73239CB16600529F1F /* mainViewController.swift in Sources */,
 				17F40A8A239C9DC500FDF305 /* dogsTableViewController.swift in Sources */,
+				17758B6E239CAC6600529F1F /* extensionUIImage.swift in Sources */,
 				171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */,
 				17F40A8D239CA44D00FDF305 /* dogCellTableViewCell.swift in Sources */,
+				17758B76239CB31500529F1F /* extensionUIColor.swift in Sources */,
 				171B314C239C89390031A435 /* AppDelegate.swift in Sources */,
 				171B314E239C89390031A435 /* SceneDelegate.swift in Sources */,
+				17758B70239CB04D00529F1F /* extensionViewController.swift in Sources */,
 				17F40A90239CA81F00FDF305 /* extensionDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

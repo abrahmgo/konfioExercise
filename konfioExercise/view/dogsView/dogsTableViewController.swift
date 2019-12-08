@@ -16,13 +16,18 @@ class dogsTableViewController: UITableViewController {
     }
     
     private var arrDogs = [dog]()
-
+    private var arrImages = [String:UIImage]()
+    var dispatchGroup = DispatchGroup()
+    var useFlag = 0
+    
     func initView()
     {
+        self.navigationController?.navigationBar.isTranslucent = false
+        navigationItem.title = useFlag == 0 ? "Dogs We Love" : "Dogs I Love"
         apiKonfio.shared.downloadData{ (status, info) in
             if status != 200
             {
-                print("something is wrong")
+                self.showAlertMessage(titleStr: "Dogs", messageStr: "The dogs are unavailable \(status). 😿 ")
             }
             else
             {
@@ -38,15 +43,42 @@ class dogsTableViewController: UITableViewController {
             apiKonfio.shared.cleanDogs(data: data){ (arrDogs) in
                 DispatchQueue.main.async {
                     self.arrDogs = arrDogs
+                    self.downloadImages()
                     self.tableView.reloadData()
                 }
             }
         }
         else
         {
-            print("formato incorrecto de información")
+            self.showAlertMessage(titleStr: "Dogs", messageStr: "Incorrect data format. 😿")
         }
     }
+    
+    func downloadImages()
+    {
+        let images = self.arrDogs.map( {$0.url} )
+        let reduceImages = Array(Set(images))
+        if reduceImages.count != 0
+        {
+            for urlImage in reduceImages
+            {
+                dispatchGroup.enter()
+                let imageDownloaded = UIImage()
+                let cleanUrl = urlImage.replacingOccurrences(of: " ", with: "")
+                imageDownloaded.downloaded(from: cleanUrl) { (image, urlImage2) in
+                    DispatchQueue.main.async {
+                        self.arrImages[urlImage2] = image
+                        self.tableView.reloadData()
+                        self.dispatchGroup.leave()
+                    }
+                }
+            }
+            dispatchGroup.notify(queue: .main) {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -70,6 +102,16 @@ class dogsTableViewController: UITableViewController {
             cell.showTitle.text = arrDogs[indexPath.row].dogName
             cell.showDescription.text = arrDogs[indexPath.row].description
             cell.showSubtitle.text = "Almost "+String(arrDogs[indexPath.row].age)+" years"
+        }
+        if arrImages.count != 0
+        {
+            let urlImage = arrDogs[indexPath.row].url.replacingOccurrences(of: " ", with: "")
+            if arrImages.contains(where: { (key,value) -> Bool in
+                key == urlImage
+            })
+            {
+                cell.showImage.image = arrImages[urlImage]
+            }
         }
         return cell
     }
