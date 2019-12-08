@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		171B314C239C89390031A435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B314B239C89390031A435 /* AppDelegate.swift */; };
 		171B314E239C89390031A435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B314D239C89390031A435 /* SceneDelegate.swift */; };
-		171B3150239C89390031A435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B314F239C89390031A435 /* ViewController.swift */; };
 		171B3153239C89390031A435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B3151239C89390031A435 /* Main.storyboard */; };
 		171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */; };
 		171B3158239C893A0031A435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171B3157239C893A0031A435 /* Assets.xcassets */; };
@@ -19,6 +18,10 @@
 		17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */; };
 		17F40A82239C8C7100FDF305 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A81239C8C7100FDF305 /* dog.swift */; };
 		17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A84239C8CCD00FDF305 /* apiKonfio.swift */; };
+		17F40A87239C9D5400FDF305 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A86239C9D5400FDF305 /* a.jpg */; };
+		17F40A8A239C9DC500FDF305 /* dogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A89239C9DC500FDF305 /* dogsTableViewController.swift */; };
+		17F40A8D239CA44D00FDF305 /* dogCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A8C239CA44D00FDF305 /* dogCellTableViewCell.swift */; };
+		17F40A90239CA81F00FDF305 /* extensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A8F239CA81F00FDF305 /* extensionDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,6 @@
 		171B3148239C89390031A435 /* konfioExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = konfioExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		171B314B239C89390031A435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		171B314D239C89390031A435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		171B314F239C89390031A435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		171B3152239C89390031A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		171B3155239C89390031A435 /* konfioExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = konfioExercise.xcdatamodel; sourceTree = "<group>"; };
 		171B3157239C893A0031A435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,10 @@
 		17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17F40A81239C8C7100FDF305 /* dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
 		17F40A84239C8CCD00FDF305 /* apiKonfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKonfio.swift; sourceTree = "<group>"; };
+		17F40A86239C9D5400FDF305 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
+		17F40A89239C9DC500FDF305 /* dogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogsTableViewController.swift; sourceTree = "<group>"; };
+		17F40A8C239CA44D00FDF305 /* dogCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogCellTableViewCell.swift; sourceTree = "<group>"; };
+		17F40A8F239CA81F00FDF305 /* extensionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +113,13 @@
 		171B314A239C89390031A435 /* konfioExercise */ = {
 			isa = PBXGroup;
 			children = (
+				17F40A8E239CA81200FDF305 /* extension */,
+				17F40A88239C9D9800FDF305 /* view */,
 				17F40A83239C8CAB00FDF305 /* api */,
 				17F40A7F239C8BAD00FDF305 /* assets */,
 				17F40A7C239C8B3100FDF305 /* model */,
 				17F40A7B239C8B2000FDF305 /* storage */,
 				17A83058239C8AD700AC6287 /* supportingFiles */,
-				171B314F239C89390031A435 /* ViewController.swift */,
-				171B3151239C89390031A435 /* Main.storyboard */,
 				171B3157239C893A0031A435 /* Assets.xcassets */,
 			);
 			path = konfioExercise;
@@ -167,6 +173,7 @@
 		17F40A7F239C8BAD00FDF305 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				17F40A86239C9D5400FDF305 /* a.jpg */,
 				17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */,
 			);
 			path = assets;
@@ -178,6 +185,32 @@
 				17F40A84239C8CCD00FDF305 /* apiKonfio.swift */,
 			);
 			path = api;
+			sourceTree = "<group>";
+		};
+		17F40A88239C9D9800FDF305 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				17F40A8B239CA43600FDF305 /* dogsView */,
+				171B3151239C89390031A435 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		17F40A8B239CA43600FDF305 /* dogsView */ = {
+			isa = PBXGroup;
+			children = (
+				17F40A89239C9DC500FDF305 /* dogsTableViewController.swift */,
+				17F40A8C239CA44D00FDF305 /* dogCellTableViewCell.swift */,
+			);
+			path = dogsView;
+			sourceTree = "<group>";
+		};
+		17F40A8E239CA81200FDF305 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				17F40A8F239CA81F00FDF305 /* extensionDictionary.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +319,7 @@
 			files = (
 				171B315B239C893A0031A435 /* LaunchScreen.storyboard in Resources */,
 				17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */,
+				17F40A87239C9D5400FDF305 /* a.jpg in Resources */,
 				171B3158239C893A0031A435 /* Assets.xcassets in Resources */,
 				171B3153239C89390031A435 /* Main.storyboard in Resources */,
 			);
@@ -312,12 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				171B3150239C89390031A435 /* ViewController.swift in Sources */,
 				17F40A82239C8C7100FDF305 /* dog.swift in Sources */,
 				17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */,
+				17F40A8A239C9DC500FDF305 /* dogsTableViewController.swift in Sources */,
 				171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */,
+				17F40A8D239CA44D00FDF305 /* dogCellTableViewCell.swift in Sources */,
 				171B314C239C89390031A435 /* AppDelegate.swift in Sources */,
 				171B314E239C89390031A435 /* SceneDelegate.swift in Sources */,
+				17F40A90239CA81F00FDF305 /* extensionDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

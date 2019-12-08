@@ -54,4 +54,18 @@ public class apiKonfio{
         }
         task.resume()
     }
+    
+    func cleanDogs(data : [[String:Any]],completion: @escaping (([dog]) -> Void))
+    {
+        var dogs = [dog]()
+        for puppy in data
+        {
+            let jsonData = puppy.json.data(using: .utf8)!
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let uniqueDog = try! decoder.decode(dog.self, from: jsonData)
+            dogs.append(uniqueDog)
+        }
+        completion(dogs)
+    }
 }

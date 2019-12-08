@@ -10,7 +10,7 @@ import Foundation
 
 struct dog: Codable{
     var dogName : String
-    var descripton : String
+    var description : String
     var age : Int
     var url : String
 }
