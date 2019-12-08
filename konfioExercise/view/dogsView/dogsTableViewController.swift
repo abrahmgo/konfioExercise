@@ -19,6 +19,8 @@ class dogsTableViewController: UITableViewController {
     private var arrDogs = [dog]()
     private var arrImages = [String:UIImage]()
     var localArrDogs = [Dogs]()
+    var favoritesArrDogs = [FavoriteDogs]()
+    var idFavoriteDogs = [String]()
     var dispatchGroup = DispatchGroup()
     var useFlag = 0
     
@@ -26,7 +28,15 @@ class dogsTableViewController: UITableViewController {
     {
         self.navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = useFlag == 0 ? "Dogs We Love" : "Dogs I Love"
-        checkLocalData()
+        if useFlag == 0
+        {
+            checkLocalData()
+            checkFavorites()
+        }
+        else
+        {
+            checkFavorites()
+        }
     }
     
     func getData()
@@ -49,8 +59,8 @@ class dogsTableViewController: UITableViewController {
         {
             apiKonfio.shared.cleanDogs(data: data){ (arrDogs) in
                 DispatchQueue.main.async {
-                    self.saveData()
                     self.arrDogs = arrDogs
+                    self.saveData()
                     self.downloadImages()
                     self.tableView.reloadData()
                 }
@@ -107,6 +117,57 @@ class dogsTableViewController: UITableViewController {
         }
     }
     
+    func checkFavorites()
+    {
+        do{
+            favoritesArrDogs = try context.fetch(FavoriteDogs.fetchRequest())
+            if favoritesArrDogs.count != 0
+            {
+                for data in favoritesArrDogs
+                {
+                    let localDog = data.dogUrl!
+                    idFavoriteDogs.append(localDog)
+                }
+                DispatchQueue.main.async {
+                    if self.useFlag == 1
+                    {
+                        self.checkInfoFavorites()
+                    }
+                    self.tableView.reloadData()
+                }
+            }
+            else
+            {
+                if useFlag == 1{
+                    DispatchQueue.main.async {
+                        self.showAlertMessageCompletion(titleStr: "Dogs", messageStr: "You don't love puppies 🐕") { (_) in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                    }
+                }
+            }
+        }catch let error as NSError{
+            print("error \(error) \(error.userInfo)")
+        }
+    }
+    
+    func checkInfoFavorites()
+    {
+        for urlDog in idFavoriteDogs
+        {
+            if let info = coreDataManager.shared.searchRegister("Dogs", id: urlDog)
+            {
+                let dogFavorite = info[0] as! Dogs
+                let localFavoriteDog =  dog(dogName: dogFavorite.dogName!, description: dogFavorite.dogDescription!, age: Int(dogFavorite.dogAge), url: dogFavorite.dogUrl!)
+                arrDogs.append(localFavoriteDog)
+            }
+        }
+        DispatchQueue.main.async {
+            self.downloadImages()
+            self.tableView.reloadData()
+        }
+    }
+    
     func checkLocalData()
     {
         do{
@@ -157,9 +218,23 @@ class dogsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! dogCellTableViewCell
         if arrDogs.count != 0
         {
+            cell.favoriteButton.tag = indexPath.row
+            cell.favoriteButton.addTarget(self, action: #selector(favoriteDog(sender:)), for: .touchUpInside)
             cell.showTitle.text = arrDogs[indexPath.row].dogName
             cell.showDescription.text = arrDogs[indexPath.row].description
             cell.showSubtitle.text = "Almost "+String(arrDogs[indexPath.row].age)+" years"
+            if idFavoriteDogs.count != 0
+            {
+                if idFavoriteDogs.contains(arrDogs[indexPath.row].url)
+                {
+                    cell.favoriteButton.setBackgroundImage(UIImage(named: "favorite"), for: .normal)
+                    cell.favoriteButton.isSelected = true
+                }
+                else
+                {
+                    cell.favoriteButton.setBackgroundImage(UIImage(named: "nonFavorite"), for: .normal)
+                }
+            }
         }
         if arrImages.count != 0
         {
@@ -172,6 +247,62 @@ class dogsTableViewController: UITableViewController {
             }
         }
         return cell
+    }
+    
+    @objc func favoriteDog(sender: UIButton)
+    {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected
+        {
+            if saveFavoriteDog(index: sender.tag)
+            {
+                sender.setBackgroundImage(UIImage(named: "favorite"), for: .normal)
+            }
+        }
+        else
+        {
+            if deleteFavoriteDog(index: sender.tag)
+            {
+                sender.setBackgroundImage(UIImage(named: "nonFavorite"), for: .normal)
+            }
+        }
+    }
+    
+    func saveFavoriteDog(index: Int) -> Bool
+    {
+        let dogSave = FavoriteDogs(entity: FavoriteDogs.entity(), insertInto: self.context)
+        dogSave.dogUrl = arrDogs[index].url
+        if coreDataManager.shared.saveContext()
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+    
+    func deleteFavoriteDog(index: Int) -> Bool
+    {
+        if coreDataManager.shared.deleteRegister("FavoriteDogs", id: arrDogs[index].url)
+        {
+            arrDogs.remove(at: index)
+            if arrDogs.count == 0
+            {
+                self.navigationController?.popViewController(animated: true)
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+            return true
+        }
+        else
+        {
+            return false
+        }
     }
 
 }

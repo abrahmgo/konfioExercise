@@ -34,7 +34,7 @@
                                             <rect key="frame" x="138" y="63" width="216" height="147"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYw-VE-Tnv" customClass="labelTitle" customModule="konfioExercise" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="14" width="189" height="24"/>
+                                                    <rect key="frame" x="8" y="14" width="172" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="ogW-IQ-wlq"/>
                                                     </constraints>
@@ -57,15 +57,23 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVG-ni-lQS">
+                                                    <rect key="frame" x="184" y="14" width="24" height="24"/>
+                                                    <state key="normal" image="nonFavorite"/>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
                                                 <constraint firstItem="MK5-aO-cNc" firstAttribute="top" secondItem="Jbh-aj-uHo" secondAttribute="bottom" constant="6" id="108-Xw-XXp"/>
+                                                <constraint firstItem="yVG-ni-lQS" firstAttribute="trailing" secondItem="eFV-ac-iIu" secondAttribute="trailingMargin" id="152-cO-jxg"/>
+                                                <constraint firstItem="yVG-ni-lQS" firstAttribute="leading" secondItem="iYw-VE-Tnv" secondAttribute="trailing" constant="4" id="DOY-wC-VQV"/>
                                                 <constraint firstItem="iYw-VE-Tnv" firstAttribute="leading" secondItem="eFV-ac-iIu" secondAttribute="leadingMargin" id="Iav-yv-dAa"/>
                                                 <constraint firstItem="iYw-VE-Tnv" firstAttribute="top" secondItem="eFV-ac-iIu" secondAttribute="top" constant="14" id="NpU-Pg-FAC"/>
-                                                <constraint firstAttribute="trailing" secondItem="iYw-VE-Tnv" secondAttribute="trailing" constant="19" id="Upu-oD-n4U"/>
+                                                <constraint firstItem="yVG-ni-lQS" firstAttribute="top" secondItem="iYw-VE-Tnv" secondAttribute="top" id="Qzd-do-eMD"/>
+                                                <constraint firstAttribute="trailing" secondItem="iYw-VE-Tnv" secondAttribute="trailing" constant="36" id="Upu-oD-n4U"/>
                                                 <constraint firstAttribute="bottom" secondItem="MK5-aO-cNc" secondAttribute="bottom" constant="33" id="a6i-4i-PSW"/>
-                                                <constraint firstItem="iYw-VE-Tnv" firstAttribute="trailing" secondItem="Jbh-aj-uHo" secondAttribute="trailing" id="n6i-zQ-aAq"/>
+                                                <constraint firstItem="yVG-ni-lQS" firstAttribute="bottom" secondItem="iYw-VE-Tnv" secondAttribute="bottom" id="kUf-Bz-J1A"/>
+                                                <constraint firstItem="iYw-VE-Tnv" firstAttribute="trailing" secondItem="Jbh-aj-uHo" secondAttribute="trailing" constant="-17" id="n6i-zQ-aAq"/>
                                                 <constraint firstItem="iYw-VE-Tnv" firstAttribute="leading" secondItem="Jbh-aj-uHo" secondAttribute="leading" id="nfS-LC-ryR"/>
                                                 <constraint firstItem="Jbh-aj-uHo" firstAttribute="leading" secondItem="MK5-aO-cNc" secondAttribute="leading" id="ovy-5c-dY5"/>
                                                 <constraint firstItem="Jbh-aj-uHo" firstAttribute="top" secondItem="iYw-VE-Tnv" secondAttribute="bottom" constant="7" id="phW-Sm-30u"/>
@@ -86,6 +94,7 @@
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="cardData" destination="eFV-ac-iIu" id="MVc-2Q-Xfy"/>
+                                    <outlet property="favoriteButton" destination="yVG-ni-lQS" id="Qbm-9w-Hrv"/>
                                     <outlet property="showDescription" destination="Jbh-aj-uHo" id="jeu-Zc-Ovg"/>
                                     <outlet property="showImage" destination="Gd5-L9-MF0" id="JKF-Pd-yo0"/>
                                     <outlet property="showSubtitle" destination="MK5-aO-cNc" id="Gd8-AI-R73"/>
@@ -102,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdp-Di-c4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="170"/>
+            <point key="canvasLocation" x="2101.5999999999999" y="169.95073891625617"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="CbP-rH-dxL">
@@ -119,12 +128,23 @@
                                     <action selector="dogsWeLove:" destination="s6f-3x-dr1" eventType="touchUpInside" id="dhQ-UJ-orN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-ls-Btf" customClass="buttonPrincipal" customModule="konfioExercise" customModuleProvider="target">
+                                <rect key="frame" x="46" y="465" width="283" height="50"/>
+                                <state key="normal" title="Dogs I Love"/>
+                                <connections>
+                                    <action selector="dosgILove:" destination="s6f-3x-dr1" eventType="touchUpInside" id="RKJ-wo-FEx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gTQ-ls-Btf" firstAttribute="leading" secondItem="CtU-pb-l5K" secondAttribute="leading" id="0fM-kC-gpt"/>
                             <constraint firstItem="CtU-pb-l5K" firstAttribute="centerY" secondItem="VPq-mf-sRA" secondAttribute="centerY" id="3dj-zD-tup"/>
+                            <constraint firstItem="vQ2-PG-sWP" firstAttribute="bottom" secondItem="gTQ-ls-Btf" secondAttribute="bottom" constant="263" id="5G6-65-2KX"/>
                             <constraint firstItem="CtU-pb-l5K" firstAttribute="centerX" secondItem="vQ2-PG-sWP" secondAttribute="centerX" id="6Ji-f5-ql1"/>
+                            <constraint firstItem="gTQ-ls-Btf" firstAttribute="top" secondItem="CtU-pb-l5K" secondAttribute="bottom" constant="34" id="ArQ-ms-3vV"/>
                             <constraint firstItem="CtU-pb-l5K" firstAttribute="top" secondItem="vQ2-PG-sWP" secondAttribute="top" constant="293" id="F8s-BQ-i7K"/>
+                            <constraint firstItem="gTQ-ls-Btf" firstAttribute="trailing" secondItem="CtU-pb-l5K" secondAttribute="trailing" id="QWX-jn-kYb"/>
                             <constraint firstItem="CtU-pb-l5K" firstAttribute="leading" secondItem="vQ2-PG-sWP" secondAttribute="leading" constant="46" id="wii-4A-2oS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vQ2-PG-sWP"/>
@@ -154,4 +174,7 @@
             <point key="canvasLocation" x="765.60000000000002" y="170.46476761619192"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nonFavorite" width="32" height="32"/>
+    </resources>
 </document>

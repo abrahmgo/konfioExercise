@@ -60,7 +60,7 @@ class coreDataManager {
         let context = coreDataManager.shared.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
         
-        fetchRequest.predicate = NSPredicate(format: "id = %@", id)
+        fetchRequest.predicate = NSPredicate(format: "dogUrl = %@", id)
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
@@ -77,7 +77,7 @@ class coreDataManager {
         let context = coreDataManager.shared.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
         
-        fetchRequest.predicate = NSPredicate(format: "id = %@", id)
+        fetchRequest.predicate = NSPredicate(format: "dogUrl = %@", id)
         fetchRequest.returnsObjectsAsFaults = false
         
         do {

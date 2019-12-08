@@ -26,6 +26,8 @@
 		17758B83239CBE1A00529F1F /* labelSubTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B82239CBE1A00529F1F /* labelSubTitle.swift */; };
 		17758B85239CBE2700529F1F /* labelDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B84239CBE2700529F1F /* labelDescription.swift */; };
 		17758B87239CBF5F00529F1F /* buttonPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17758B86239CBF5F00529F1F /* buttonPrincipal.swift */; };
+		17B522D6239CC7AF00F1D810 /* FavoriteDogs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B522D4239CC7AF00F1D810 /* FavoriteDogs+CoreDataClass.swift */; };
+		17B522D7239CC7AF00F1D810 /* FavoriteDogs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B522D5239CC7AF00F1D810 /* FavoriteDogs+CoreDataProperties.swift */; };
 		17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */; };
 		17F40A82239C8C7100FDF305 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A81239C8C7100FDF305 /* dog.swift */; };
 		17F40A85239C8CCD00FDF305 /* apiKonfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40A84239C8CCD00FDF305 /* apiKonfio.swift */; };
@@ -78,6 +80,8 @@
 		17758B82239CBE1A00529F1F /* labelSubTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelSubTitle.swift; sourceTree = "<group>"; };
 		17758B84239CBE2700529F1F /* labelDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelDescription.swift; sourceTree = "<group>"; };
 		17758B86239CBF5F00529F1F /* buttonPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonPrincipal.swift; sourceTree = "<group>"; };
+		17B522D4239CC7AF00F1D810 /* FavoriteDogs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteDogs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		17B522D5239CC7AF00F1D810 /* FavoriteDogs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteDogs+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17F40A81239C8C7100FDF305 /* dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
 		17F40A84239C8CCD00FDF305 /* apiKonfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKonfio.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 		17758B77239CB56100529F1F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				17B522D4239CC7AF00F1D810 /* FavoriteDogs+CoreDataClass.swift */,
+				17B522D5239CC7AF00F1D810 /* FavoriteDogs+CoreDataProperties.swift */,
 				17758B79239CB57E00529F1F /* Dogs+CoreDataClass.swift */,
 				17758B7A239CB57E00529F1F /* Dogs+CoreDataProperties.swift */,
 			);
@@ -419,6 +425,7 @@
 				17F40A8A239C9DC500FDF305 /* dogsTableViewController.swift in Sources */,
 				17758B6E239CAC6600529F1F /* extensionUIImage.swift in Sources */,
 				171B3156239C89390031A435 /* konfioExercise.xcdatamodeld in Sources */,
+				17B522D6239CC7AF00F1D810 /* FavoriteDogs+CoreDataClass.swift in Sources */,
 				17758B83239CBE1A00529F1F /* labelSubTitle.swift in Sources */,
 				17758B7E239CB5AA00529F1F /* coreDataManager.swift in Sources */,
 				17F40A8D239CA44D00FDF305 /* dogCellTableViewCell.swift in Sources */,
@@ -430,6 +437,7 @@
 				17758B81239CBE0F00529F1F /* labelTitle.swift in Sources */,
 				17758B7C239CB57E00529F1F /* Dogs+CoreDataProperties.swift in Sources */,
 				17F40A90239CA81F00FDF305 /* extensionDictionary.swift in Sources */,
+				17B522D7239CC7AF00F1D810 /* FavoriteDogs+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

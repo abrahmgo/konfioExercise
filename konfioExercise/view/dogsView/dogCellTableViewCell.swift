@@ -16,6 +16,7 @@ class dogCellTableViewCell: UITableViewCell {
     @IBOutlet weak var showDescription: UILabel!
     @IBOutlet weak var showSubtitle: UILabel!
     @IBOutlet weak var cardData: UIView!
+    @IBOutlet weak var favoriteButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
