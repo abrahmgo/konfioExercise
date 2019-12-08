@@ -16,6 +16,7 @@
 		171B315B239C893A0031A435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B3159239C893A0031A435 /* LaunchScreen.storyboard */; };
 		171B3166239C893A0031A435 /* konfioExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3165239C893A0031A435 /* konfioExerciseTests.swift */; };
 		171B3171239C893A0031A435 /* konfioExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B3170239C893A0031A435 /* konfioExerciseUITests.swift */; };
+		17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		171B316C239C893A0031A435 /* konfioExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konfioExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		171B3170239C893A0031A435 /* konfioExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = konfioExerciseUITests.swift; sourceTree = "<group>"; };
 		171B3172239C893A0031A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,13 @@
 		171B314A239C89390031A435 /* konfioExercise */ = {
 			isa = PBXGroup;
 			children = (
-				171B314B239C89390031A435 /* AppDelegate.swift */,
-				171B314D239C89390031A435 /* SceneDelegate.swift */,
+				17F40A7F239C8BAD00FDF305 /* assets */,
+				17F40A7C239C8B3100FDF305 /* model */,
+				17F40A7B239C8B2000FDF305 /* storage */,
+				17A83058239C8AD700AC6287 /* supportingFiles */,
 				171B314F239C89390031A435 /* ViewController.swift */,
 				171B3151239C89390031A435 /* Main.storyboard */,
 				171B3157239C893A0031A435 /* Assets.xcassets */,
-				171B3159239C893A0031A435 /* LaunchScreen.storyboard */,
-				171B315C239C893A0031A435 /* Info.plist */,
-				171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */,
 			);
 			path = konfioExercise;
 			sourceTree = "<group>";
@@ -129,6 +130,40 @@
 				171B3172239C893A0031A435 /* Info.plist */,
 			);
 			path = konfioExerciseUITests;
+			sourceTree = "<group>";
+		};
+		17A83058239C8AD700AC6287 /* supportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				171B315C239C893A0031A435 /* Info.plist */,
+				171B314B239C89390031A435 /* AppDelegate.swift */,
+				171B314D239C89390031A435 /* SceneDelegate.swift */,
+				171B3159239C893A0031A435 /* LaunchScreen.storyboard */,
+			);
+			path = supportingFiles;
+			sourceTree = "<group>";
+		};
+		17F40A7B239C8B2000FDF305 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				171B3154239C89390031A435 /* konfioExercise.xcdatamodeld */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		17F40A7C239C8B3100FDF305 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		17F40A7F239C8BAD00FDF305 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				17F40A7D239C8B4B00FDF305 /* Default-568h@2x.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				171B315B239C893A0031A435 /* LaunchScreen.storyboard in Resources */,
+				17F40A7E239C8B4C00FDF305 /* Default-568h@2x.png in Resources */,
 				171B3158239C893A0031A435 /* Assets.xcassets in Resources */,
 				171B3153239C89390031A435 /* Main.storyboard in Resources */,
 			);
@@ -440,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJAAB85D5P;
-				INFOPLIST_FILE = konfioExercise/Info.plist;
+				INFOPLIST_FILE = konfioExercise/supportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,7 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJAAB85D5P;
-				INFOPLIST_FILE = konfioExercise/Info.plist;
+				INFOPLIST_FILE = konfioExercise/supportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
